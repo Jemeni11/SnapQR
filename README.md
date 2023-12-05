@@ -4,6 +4,12 @@
 
 SnapQR is a QR code scanner and generator app for mobile devices. It is built with React Native and Expo.
 
+## Why did I build this?
+
+This [tweet](https://x.com/jemeni11_/status/1648616017982005248?s=20).
+
+![Tweet](./tweet.png)
+
 ## Planned Features
 
 - [ ] Scan QR codes
@@ -28,3 +34,12 @@ This list is subject to change as the project progresses.
 - [Expo Google Fonts v0.2](https://docs.expo.dev/guides/using-custom-fonts/#using-a-google-font) ([Inter](https://fonts.google.com/specimen/Inter))
 - [Expo Clipboard v4.1](https://docs.expo.dev/versions/latest/sdk/clipboard/)
 - [Expo Splash Screen v0.18](https://docs.expo.dev/versions/latest/sdk/splash-screen/)
+
+## Wait a minute, who are you?
+
+Hello there! I'm Emmanuel Jemeni, and while I primarily work as a Frontend Developer, Mobile App Development interests me.
+You can find me on various platforms:
+
+- [LinkedIn](https://www.linkedin.com/in/emmanuel-jemeni)
+- [GitHub](https://github.com/Jemeni11)
+- [Twitter/X](https://twitter.com/Jemeni11_)
