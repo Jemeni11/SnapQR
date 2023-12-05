@@ -2,6 +2,8 @@
 
 ## Introduction
 
+SnapQR is a QR code scanner and generator app for mobile devices. It is built with React Native and Expo.
+
 ## Planned Features
 
 - [ ] Scan QR codes
