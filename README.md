@@ -10,7 +10,7 @@ This [tweet](https://x.com/jemeni11_/status/1648616017982005248?s=20).
 
 ![Tweet](./tweet.png)
 
-This project has it's own hashtag now: [#Jemeni11madeSnapQR](https://twitter.com/hashtag/Jemeni11madeSnapQR?src=hashtag_click)
+This project has a hashtag: [#Jemeni11madeSnapQR](https://twitter.com/hashtag/Jemeni11madeSnapQR?src=hashtag_click)
 
 ## Planned Features
 
