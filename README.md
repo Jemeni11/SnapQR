@@ -36,6 +36,9 @@ This list is subject to change as the project progresses.
 - [Expo Google Fonts v0.2](https://docs.expo.dev/guides/using-custom-fonts/#using-a-google-font) ([Inter](https://fonts.google.com/specimen/Inter))
 - [Expo Clipboard v4.1](https://docs.expo.dev/versions/latest/sdk/clipboard/)
 - [Expo Splash Screen v0.18](https://docs.expo.dev/versions/latest/sdk/splash-screen/)
+- [React Native Theme Switch Animation](https://github.com/WadhahEssam/react-native-theme-switch-animation)
+- [React Native QRCode Styled](https://github.com/tokkozhin/react-native-qrcode-styled)
+- [Expo Router](https://docs.expo.dev/router/installation/)
 
 ## Wait a minute, who are you?
 
