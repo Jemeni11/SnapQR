@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Text, View, StyleSheet, Button, TouchableOpacity } from "react-native";
-import { BarCodeScanner } from "expo-barcode-scanner";
-import { GlobalStyles } from "../styles";
-import TabScreen from "../components/TabScreen";
+// import { BarCodeScanner } from "expo-barcode-scanner";
+// import { GlobalStyles } from "../styles";
+// import TabScreen from "../components/TabScreen";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -16,57 +16,60 @@ export default function ScanFromCamera({ navigation }) {
     setCurrentCamera(currentCamera === "back" ? "front" : "back");
   }
 
-  useEffect(() => {
-    const getBarCodeScannerPermissions = async () => {
-      const { status } = await BarCodeScanner.requestPermissionsAsync();
-      setHasPermission(status === "granted");
-    };
+  // useEffect(() => {
+  //   const getBarCodeScannerPermissions = async () => {
+  //     const { status } = await BarCodeScanner.requestPermissionsAsync();
+  //     setHasPermission(status === "granted");
+  //   };
 
-    getBarCodeScannerPermissions();
-  }, []);
+  //   getBarCodeScannerPermissions();
+  // }, []);
 
-  const handleBarCodeScanned = (BarCodeScannerResult) => {
-    setScanned(true);
-    navigation.navigate("QRCodeDetailsScreen", {
-      QRdata: BarCodeScannerResult,
-    });
-  };
+  // const handleBarCodeScanned = (BarCodeScannerResult) => {
+  //   setScanned(true);
+  //   navigation.navigate("QRCodeDetailsScreen", {
+  //     QRdata: BarCodeScannerResult,
+  //   });
+  // };
 
-  if (hasPermission === null) {
-    return <Text>Requesting for camera permission</Text>;
-  }
-  if (hasPermission === false) {
-    return <Text>No access to camera</Text>;
-  }
+  // if (hasPermission === null) {
+  //   return <Text>Requesting for camera permission</Text>;
+  // }
+  // if (hasPermission === false) {
+  //   return <Text>No access to camera</Text>;
+  // }
 
   return (
-    <TabScreen extraStyles={{ paddingTop: insets.top, rowGap: 6 }}>
-      <BarCodeScanner
-        type={currentCamera}
-        onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-        style={styles.barCodeScanner}
-      >
-        <TouchableOpacity
-          style={styles.switchButton}
-          onPress={() => switchCurrentCamera()}
-        >
-          <MaterialCommunityIcons
-            name="camera-flip"
-            size={40}
-            color={GlobalStyles.color.primaryColor}
-          />
-          <Text style={{ fontSize: 20 }}>
-            Switch to {currentCamera === "back" ? "front" : "back"} camera
-          </Text>
-        </TouchableOpacity>
-        {scanned && (
-          <Button
-            title={"Tap to Scan Again"}
-            onPress={() => setScanned(false)}
-          />
-        )}
-      </BarCodeScanner>
-    </TabScreen>
+    // <TabScreen extraStyles={{ paddingTop: insets.top, rowGap: 6 }}>
+    //   <BarCodeScanner
+    //     type={currentCamera}
+    //     onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+    //     style={styles.barCodeScanner}
+    //   >
+    //     <TouchableOpacity
+    //       style={styles.switchButton}
+    //       onPress={() => switchCurrentCamera()}
+    //     >
+    //       <MaterialCommunityIcons
+    //         name="camera-flip"
+    //         size={40}
+    //         color={GlobalStyles.color.primaryColor}
+    //       />
+    //       <Text style={{ fontSize: 20 }}>
+    //         Switch to {currentCamera === "back" ? "front" : "back"} camera
+    //       </Text>
+    //     </TouchableOpacity>
+    //     {scanned && (
+    //       <Button
+    //         title={"Tap to Scan Again"}
+    //         onPress={() => setScanned(false)}
+    //       />
+    //     )}
+    //   </BarCodeScanner>
+    // </TabScreen>
+    <View>
+      <Text>Scan QR</Text>
+    </View>
   );
 }
 
@@ -82,7 +85,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     columnGap: 4,
     alignItems: "center",
-    backgroundColor: GlobalStyles.color.accentColor,
+    // backgroundColor: GlobalStyles.color.accentColor,
     width: "96%",
     borderRadius: 24,
   },
