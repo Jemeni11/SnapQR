@@ -4,7 +4,9 @@
     "description": "QR codes",
     "slug": "snap-qr",
     "version": "1.0.0",
-    "platforms": ["android"],
+    "platforms": [
+      "android"
+    ],
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "snapqr",
@@ -22,7 +24,10 @@
       },
       "softwareKeyboardLayoutMode": "pan",
       "predictiveBackGestureEnabled": false,
-      "package": "com.jemeni11.snapqr"
+      "package": "com.jemeni11.snapqr",
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
     },
     "plugins": [
       "expo-router",
@@ -78,7 +83,35 @@
             ]
           }
         }
-      ]
+      ],
+      [
+        "expo-sqlite",
+        {
+          "enableFTS": true,
+          "useSQLCipher": true
+        }
+      ],
+      [
+        "expo-sharing",
+        {
+          "android": {
+            "enabled": true,
+            "singleShareMimeTypes": [
+              "image/*"
+            ]
+          }
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "granularPermissions": [
+            "photo"
+          ]
+        }
+      ],
+      "expo-file-system",
+      "expo-image"
     ],
     "experiments": {
       "typedRoutes": true,
