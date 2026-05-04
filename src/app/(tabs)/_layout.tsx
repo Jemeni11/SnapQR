@@ -2,7 +2,7 @@ import { NativeTabs } from "expo-router/unstable-native-tabs";
 
 export default function TabLayout() {
   return (
-    <NativeTabs>
+    <NativeTabs labelVisibilityMode="labeled" rippleColor="transparent">
       <NativeTabs.Trigger name="index">
         <NativeTabs.Trigger.Label>Scan</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon md="qr_code_scanner" />
