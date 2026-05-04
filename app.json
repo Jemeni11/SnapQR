@@ -23,7 +23,7 @@
       "softwareKeyboardLayoutMode": "pan",
       "predictiveBackGestureEnabled": false
     },
-    "plugins": ["expo-router", "expo-font", "expo-web-browser"],
+    "plugins": ["expo-router", "expo-font", "expo-web-browser", "expo-dev-client"],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
