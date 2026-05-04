@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
   },
   linkText: {
-    fontSize: 14,
     color: "#2e78b7",
+    fontSize: 14,
   },
   title: {
     fontSize: 20,

@@ -1,7 +1,8 @@
 {
   "name": "snap-qr",
-  "main": "expo-router/entry",
   "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -42,8 +43,10 @@
     "react-test-renderer": "19.1.0",
     "typescript": "~5.9.2"
   },
-  "private": true,
   "lint-staged": {
-    "*.{js,ts,jsx,tsx,mjs,cjs}": ["oxlint --fix", "oxfmt"]
+    "*.{js,ts,jsx,tsx,mjs,cjs}": [
+      "oxlint --fix",
+      "oxfmt"
+    ]
   }
 }
