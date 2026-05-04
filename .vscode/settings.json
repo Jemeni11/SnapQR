@@ -1,11 +1,38 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.organizeImports": "explicit",
-    "source.sortMembers": "explicit"
+    "source.fixAll.oxc": "explicit",
+    "source.format.oxc": "explicit"
   },
   "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.formatOnSaveMode": "file",
   "oxc.path.oxfmt": "./node_modules/.bin/oxfmt",
-  "oxc.path.oxlint": "./node_modules/.bin/oxlint"
+  "oxc.path.oxlint": "./node_modules/.bin/oxlint",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": true
+  },
+  "js/ts.updateImportsOnPaste.enabled": false,
+  "js/ts.updateImportsOnFileMove.enabled": "never",
+  "js/ts.tsserver.maxMemory": 8192,
+  "js/ts.tsserver.experimental.enableProjectDiagnostics": false,
+  "editor.semanticHighlighting.enabled": false,
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/android/**": true,
+    "**/ios/**": true,
+    "**/.expo/**": true,
+    "**/.metro-cache/**": true,
+    "**/dist/**": true
+  },
+  "search.exclude": {
+    "**/node_modules/**": true,
+    "**/.expo/**": true,
+    "**/.metro-cache/**": true,
+    "**/ios/**": true,
+    "**/android/**": true
+  }
 }
