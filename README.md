@@ -39,16 +39,16 @@ SnapQR is a QR code scanner and generator for Android. Scan any QR code instantl
 
 These features can change at any time. Their existence depends on me having enough time or motivation to implement them all tbh.
 
-- [] Scan QR codes instantly with your camera
-- [] Import and scan QR codes from your gallery
-- [] Generate QR codes for URLs, plain text, WiFi, contacts, phone numbers, and email
-- [] Save generated codes to My Codes for quick access
-- [] Save scanned codes from your history
-- [] Share QR codes via the native Android share sheet
-- [] Download generated QR codes to your device gallery
-- [] Full scan history with search
-- [] Basic scan security (flags suspicious URLs and shorteners before you open them)
-- [] Light and dark mode (follows system, manually toggleable)
+- [ ] Scan QR codes instantly with your camera
+- [ ] Import and scan QR codes from your gallery
+- [ ] Generate QR codes for URLs, plain text, WiFi, contacts, phone numbers, and email
+- [ ] Save generated codes to My Codes for quick access
+- [ ] Save scanned codes from your history
+- [ ] Share QR codes via the native Android share sheet
+- [ ] Download generated QR codes to your device gallery
+- [ ] Full scan history with search
+- [ ] Basic scan security (flags suspicious URLs and shorteners before you open them)
+- [ ] Light and dark mode (follows system, manually toggleable)
 - [x] All data stored locally on-device
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
