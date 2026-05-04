@@ -47,11 +47,12 @@
     "react-hooks-js/todo": "error",
 
     // React Native
-    "react-native/no-color-literals": "warn",
     "react-native/no-inline-styles": "warn",
-    "react-native/no-raw-text": "error",
+    // It's kinda dumb. Make your own component wrapping text and it doesn't notice:
     "react-native/no-single-element-style-arrays": "error",
     "react-native/no-unused-styles": "warn",
-    "react-native/sort-styles": "warn"
+    "react-native/no-raw-text": "off",
+    "react-native/no-color-literals": "off",
+    "react-native/sort-styles": "off"
   }
 }
