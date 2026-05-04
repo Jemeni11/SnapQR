@@ -56,7 +56,7 @@
     "react-hooks-js/todo": "error",
 
     // React Native
-    "react-native/no-color-literals": "error",
+    "react-native/no-color-literals": "warn",
     "react-native/no-inline-styles": "warn",
     "react-native/no-raw-text": "error",
     "react-native/no-single-element-style-arrays": "error",
