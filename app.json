@@ -4,7 +4,9 @@
     "description": "QR codes",
     "slug": "snap-qr",
     "version": "1.0.0",
-    "platforms": ["android"],
+    "platforms": [
+      "android"
+    ],
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "snapqr",
@@ -21,12 +23,24 @@
         "backgroundColor": "#ffffff"
       },
       "softwareKeyboardLayoutMode": "pan",
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.jemeni11.snapqr"
     },
-    "plugins": ["expo-router", "expo-font", "expo-web-browser", "expo-dev-client"],
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser",
+      "expo-dev-client"
+    ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "12333854-2e1c-45fb-a182-5f2c3ee111ce"
+      }
     }
   }
 }
