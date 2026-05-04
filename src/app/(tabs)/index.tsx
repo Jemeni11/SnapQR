@@ -6,7 +6,7 @@ import { Text, View } from "@/components/Themed";
 export default function ScannerScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Scanner</Text>
+      <Text style={styles.themedText}>Scanner</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="app/(tabs)/index.tsx" />
     </View>
@@ -19,13 +19,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-  },
   separator: {
     marginVertical: 30,
     height: 1,
     width: "80%",
+  },
+  themedText: {
+    fontSize: 28,
+    fontFamily: "PlusJakartaSans",
+    fontWeight: "800",
   },
 });
