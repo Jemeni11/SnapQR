@@ -1,61 +1,31 @@
 {
   "expo": {
     "name": "SnapQR",
-    "slug": "snapqr",
-    "description": "Beyond Scanning - Remake, Share, and Explore",
-    "scheme": "snapqr",
-    "githubUrl": "https://github.com/Jemeni11/SnapQR",
-    "orientation": "portrait",
+    "description": "QR codes",
+    "slug": "snap-qr",
     "version": "1.0.0",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "primaryColor": "#ACA7CB",
+    "platforms": ["android"],
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "snapqr",
+    "primaryColor": "#ee6495",
+    "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true,
-      "infoPlist": {
-        "NSCameraUsageDescription": "SnapQR needs access to your Camera."
-      }
-    },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "permissions": [
-        "android.permission.CAMERA"
-      ],
-      "package": "com.jemeni11.snapqr"
+      "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      [
-        "react-native-vision-camera",
-        {
-          "cameraPermissionText": "SnapQR needs access to your Camera."
-        }
-      ],
-      "expo-router"
-    ],
+    "plugins": ["expo-router"],
     "experiments": {
-      "tsconfigPaths": true
-    },
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "049c3810-b283-4cb8-ac64-8032ddd780d4"
-      }
+      "typedRoutes": true,
+      "reactCompiler": true
     }
   }
 }
